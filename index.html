@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazar - Your Local Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Optional: Add Font Awesome for social icons later -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+</head>
+<body>
+    <!-- Sticky Navbar (Same as before) -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Bazar</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+             <div class="search-bar">
+                <input type="search" placeholder="Search products or sellers...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h2>Featured Products Near You</h2>
+
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="Furniture">Furniture</button>
+                <button class="category-btn" data-category="Bathroom Equipment">Bathroom</button>
+                <button class="category-btn" data-category="Appliances">Appliances</button>
+                <button class="category-btn" data-category="Electrical Equipment">Electrical</button>
+            </div>
+
+            <!-- Product grid will be populated by JS -->
+            <div class="product-grid" id="product-grid">
+                <!-- Product cards inserted here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (NEW STRUCTURE) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column footer-left">
+                <a href="index.html" class="footer-logo">Bazar</a>
+                <!-- Or use an image: <img src="images/logo-footer.png" alt="Bazar Logo" class="footer-logo-img"> -->
+            </div>
+            <div class="footer-column footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li> <!-- Add actual page later -->
+                    <li><a href="#">Terms of Service</a></li> <!-- Add actual page later -->
+                    <li><a href="#">FAQ</a></li> <!-- Add actual page later -->
+                </ul>
+            </div>
+            <div class="footer-column footer-right">
+                <h4>Follow Us</h4>
+                 <div class="social-links">
+                    <a href="#" aria-label="Facebook">F</a> <!-- Replace F with icon/image -->
+                    <a href="#" aria-label="Instagram">I</a> <!-- Replace I with icon/image -->
+                    <a href="#" aria-label="Twitter">T</a> <!-- Replace T with icon/image -->
+                     <!-- Use Font Awesome icons for better look: <i class="fab fa-facebook-f"></i> -->
+                 </div>
+            </div>
+        </div>
+         <div class="footer-bottom">
+            <p>© 2023 Bazar - Hyperlocal Marketplace. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
