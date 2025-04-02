@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title will be set by JS -->
+    <title>Product Details - Bazar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sticky Navbar (Same as index.html) -->
+     <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Bazar</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+             <div class="search-bar">
+                <input type="search" placeholder="Search products or sellers...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="product-page-container" id="product-details">
+                <!-- Content below will be populated by JS -->
+                <div class="product-image-section">
+                    <img src="images/placeholder.png" alt="Product Image" id="product-image">
+                    <!-- Add more images or a gallery here if needed -->
+                </div>
+                <div class="product-details-section">
+                    <h1 id="product-name">Product Name Loading...</h1>
+                    <span class="category" id="product-category">Category Loading...</span>
+                    <span class="price" id="product-price">Price Loading...</span>
+                    <div class="description" id="product-description">
+                        <p>Description Loading...</p>
+                    </div>
+                    <div class="seller-info" id="seller-info">
+                        <p>Sold by: <strong id="seller-name">Seller Loading...</strong></p>
+                        <!-- Add more seller details if available, e.g., location -->
+                    </div>
+                    <div class="product-actions">
+                        <!-- Functionality added via JS -->
+                        <button class="btn btn-buy" id="buy-button">Buy Now (Info)</button>
+                        <button class="btn btn-contact" id="contact-button">Contact Seller</button>
+                    </div>
+                </div>
+                <!-- End of JS populated content -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (NEW STRUCTURE) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column footer-left">
+                <a href="index.html" class="footer-logo">Bazar</a>
+                <!-- Or use an image: <img src="images/logo-footer.png" alt="Bazar Logo" class="footer-logo-img"> -->
+            </div>
+            <div class="footer-column footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li> <!-- Add actual page later -->
+                    <li><a href="#">Terms of Service</a></li> <!-- Add actual page later -->
+                    <li><a href="#">FAQ</a></li> <!-- Add actual page later -->
+                </ul>
+            </div>
+            <div class="footer-column footer-right">
+                <h4>Follow Us</h4>
+                 <div class="social-links">
+                    <a href="#" aria-label="Facebook">F</a> <!-- Replace F with icon/image -->
+                    <a href="#" aria-label="Instagram">I</a> <!-- Replace I with icon/image -->
+                    <a href="#" aria-label="Twitter">T</a> <!-- Replace T with icon/image -->
+                     <!-- Use Font Awesome icons for better look: <i class="fab fa-facebook-f"></i> -->
+                 </div>
+            </div>
+        </div>
+         <div class="footer-bottom">
+            <p>© 2023 Bazar - Hyperlocal Marketplace. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/products.js"></script> <!-- Load product data first -->
+    <script src="js/script.js"></script>   <!-- Load main script -->
+</body>
+</html>
